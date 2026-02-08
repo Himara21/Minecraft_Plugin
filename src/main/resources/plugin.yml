@@ -1,0 +1,130 @@
+name: rePlugin
+version: '1.0-SNAPSHOT'
+main: me.duck.rePlugin.RePlugin
+api-version: '1.21'
+
+commands:
+  gm:
+    description: "Set game mode."
+    usage: "/gm"
+  rtp:
+    description: "Random teleport."
+    usage: "/rtp"
+  spawn:
+    description: "Teleport to spawn."
+    usage: "/spawn"
+  set_spawn:
+    description: "Set spawn location."
+    usage: "/set_spawn"
+  home:
+    description: "Teleport to home."
+    usage: "/home"
+  vanish:
+    description: "Teleport to home."
+    usage: "/vanish"
+  tpa:
+    description: "Send teleport request to player."
+    usage: "/tpa"
+  tpaaccept:
+    description: "Agree teleport request to player."
+    usage: "/tpaaccept"
+  tpadeny:
+    description: "Disagree teleport request to player."
+    usage: "/tpadeny"
+  invsee:
+    description: "See player inventory."
+    usage: "/invsee"
+  endersee:
+    description: "See player enderchest."
+    usage: "/endersee"
+  customench:
+    description: "Enchanting with custom enchant."
+    usage: "/customench"
+  legench:
+    description: "Enchanting with legendary enchant."
+    usage: "/legench"
+  menu:
+    description: "Open menu."
+    usage: "/menu"
+  ec:
+    description: "See player money."
+    usage: "/ec"
+  setprefix:
+    description: "Set prefix."
+    usage: "/setprefix"
+  tpalock:
+    description: "Do not allow tpa to me"
+    usage: "/tpalock"
+
+
+
+permissions:
+  rePlugin.rtp.use:
+    description: "Give permission to use /rtp"
+    default: false
+  rePlugin.rtp.nodelay:
+    description: "Remove rtp cooldown!"
+    default: false
+  rePlugin.gm:
+    description: "Give permission to use /gm"
+    default: false
+  rePlugin.vanish.see:
+    description: "Give permission to see vanish players."
+    default: false
+  rePlugin.vanish.use:
+    description: "Give permission to use /vanish"
+    default: false
+  rePlugin.home.use:
+    description: "Give permission to use /home"
+    default: false
+  rePlugin.home.undelay:
+    description: "Remove cooldown for home."
+    default: false
+  rePlugin.spawn.use:
+    description: "Give permission to use /spawn"
+    default: false
+  rePlugin.spawn.set:
+    description: "Give permission to use /set_spawn"
+    default: false
+  rePlugin.tpa.use:
+    description: "Give permission to use /tpa"
+    default: false
+  rePlugin.tpa.request:
+    description: "Give permission to Agree or Disagree request to teleport."
+    default: false
+  rePlugin.invsee.use:
+    description: "Give permission to use /invsee"
+    default: false
+  rePlugin.invsee.block:
+    description: "Block you inventory from other players."
+    default: false
+  rePlugin.endersee.use:
+    description: "Give permission to use /endersee"
+    default: false
+  rePlugin.endersee.block:
+    description: "Block you enderchest from other players."
+    default: false
+  rePlugin.customench.use:
+    description: "Give permission to use /customench"
+    default: false
+  rePlugin.legench.use:
+    description: "Give permission to use /legench"
+    default: false
+  rePlugin.menu.use:
+    description: "Give permission to use /menu"
+    default: false
+  rePlugin.ec.use:
+    description: "Give permission to use /ec"
+    default: false
+  rePlugin.ec.set:
+    description: "Give permission to set money of player."
+    default: false
+  rePlugin.ec.get:
+    description: "Give permission to get money of player."
+    default: false
+  rePlugin.setprefix.use:
+    description: "Give permission to use /setprefix"
+    default: false
+  rePlugin.tpa.lock:
+    description: "Do not allow tpa to plyer."
+    default: false
